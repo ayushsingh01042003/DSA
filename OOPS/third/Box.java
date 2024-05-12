@@ -7,11 +7,17 @@ public class Box {
     int l;
     int w;
     int h;
+    private int[] arr; 
+
+    public int[] getArr() {
+        return arr;
+    }
 
     Box() {
         this.l = -1;
         this.w = -1;
         this.h = -1;
+        arr = new int[10];
     }
 
     Box(int l, int w, int h) {
