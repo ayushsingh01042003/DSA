@@ -14,6 +14,7 @@ class Test {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
+        // "bank_account": "123456789012",
+        // "ssn": "987-65-4321"
     }
 }
