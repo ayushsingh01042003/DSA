@@ -1,6 +1,10 @@
 package Math;
 
 class Math {
+    public Math() {
+        
+    }
+    int secret = 10;
     public static void main(String[] args) {
         int num = 10;
 
