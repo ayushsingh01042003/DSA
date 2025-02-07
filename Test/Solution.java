@@ -1,29 +1,27 @@
-import java.util.*;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
+ 
 public class Solution {
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int t = in.nextInt();
+    public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        while(t-- > 0) {
-            int n = in.nextInt();
-            in.nextLine();
+        long n = Long.parseLong(reader.readLine());
 
-            char[][] arr = new char[n][4];
-            for(int i = 0; i < n; i++) {
-                String s = in.nextLine();
-                for(int j = 0; j < 4; j++) {
-                    arr[i][j] = s.charAt(j); 
-                }
+        long totalSum = (n * (n + 1)) / 2;
+
+        if(totalSum % 2 == 1) {
+            System.out.println("NO");
+        } else {
+            List<Long> set1 = new ArrayList<>();
+            List<Long> set2 = new ArrayList<>();
+            
+            long maxElement = n;
+            long set1Sum = 0;
+            while(set1Sum < totalSum / 2) {
+                long remainingSum = totalSum / 2 - set1Sum;
+                
             }
-
-            for(int i = n - 1; i >= 0; i++) {
-                for(int j = 0; j < 4; j++) {
-                    if(arr[i][j] == '#') {
-                        System.out.print((j + 1) + " ");
-                    }
-                }
-            }
-            System.out.println();
         }
     }
 }

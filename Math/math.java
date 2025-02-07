@@ -18,5 +18,11 @@ class Math {
 
         //A ^ A = 0
         //A ^ 0 = A
+
+        // the 2 ^ 31 bit or the last bit stores 0 -> +ve or 1 -> -ve
+        // To store -ve of a number computer stores its 2's complement 
+        // 2's complement is 1's complement(flip all bits) + 1 (in binary addition 0 + 1 = 1 and 1 + 1 = 1 (with carry 1))
+        // This means -ve binary system is completely different
+        // !5 computer stores -6 and !(-6) computer stores 5
     }
 }                       
