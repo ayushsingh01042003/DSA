@@ -20,6 +20,5 @@ class StackAndQueue {
         deque.removeLast();
         // deque.addFirst(); These return elements
         // deque.addLast();
-
     }
 }

@@ -1,5 +1,7 @@
 import java.util.*;
-
+// Iterate over the nodes while doing dfs
+// have a stack and put node in stack once dfs for it is done
+// pop and print the stack
 
 //The nodes are 0 indexed 
 public class topo {
