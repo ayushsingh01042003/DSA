@@ -25,4 +25,4 @@ class Math {
         // This means -ve binary system is completely different
         // !5 computer stores -6 and !(-6) computer stores 5
     }
-}                       
+}
